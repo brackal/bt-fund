@@ -14,41 +14,58 @@
  */
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 #include <zephyr/types.h>
 
 /* STEP 1 - Define the 128 bit UUIDs for the GATT service and its characteristics in */
+/** @brief LBS Service UUID. */
+#define BT_UUID_LBS_VAL \
+    BT_UUID_128_ENCODE(0x00001523, 0x1212, 0xefde, 0x1523, 0x785feabcd123)
 
-/** @brief Callback type for when an LED state change is received. */
-typedef void (*led_cb_t)(const bool led_state);
+/** @brief Button Characteristic UUID. */
+#define BT_UUID_LBS_BUTTON_VAL \
+    BT_UUID_128_ENCODE(0x00001524, 0x1212, 0xefde, 0x1523, 0x785feabcd123)
 
-/** @brief Callback type for when the button state is pulled. */
-typedef bool (*button_cb_t)(void);
+/** @brief LED Characteristic UUID. */
+#define BT_UUID_LBS_LED_VAL \
+    BT_UUID_128_ENCODE(0x00001525, 0x1212, 0xefde, 0x1523, 0x785feabcd123)
 
-/** @brief Callback struct used by the LBS Service. */
-struct my_lbs_cb {
-	/** LED state change callback. */
-	led_cb_t led_cb;
-	/** Button read callback. */
-	button_cb_t button_cb;
-};
+#define BT_UUID_LBS BT_UUID_DECLARE_128(BT_UUID_LBS_VAL)
+#define BT_UUID_LBS_BUTTON BT_UUID_DECLARE_128(BT_UUID_LBS_BUTTON_VAL)
+#define BT_UUID_LBS_LED BT_UUID_DECLARE_128(BT_UUID_LBS_LED_VAL)
 
-/** @brief Initialize the LBS Service.
- *
- * This function registers application callback functions with the My LBS
- * Service
- *
- * @param[in] callbacks Struct containing pointers to callback functions
- *			used by the service. This pointer can be NULL
- *			if no callback functions are defined.
- *
- *
- * @retval 0 If the operation was successful.
- *           Otherwise, a (negative) error code is returned.
- */
-int my_lbs_init(struct my_lbs_cb *callbacks);
+    /** @brief Callback type for when an LED state change is received. */
+    typedef void (*set_led_state_cb_t)(const bool led_state);
+
+    /** @brief Callback type for when the button state is pulled. */
+    typedef bool (*get_button_state_cb_t)(void);
+
+    /** @brief Callback struct used by the LBS Service. */
+    struct my_lbs_callbacks
+    {
+        /** LED state change callback. */
+        set_led_state_cb_t set_led_state_cb;
+        /** Button read callback. */
+        get_button_state_cb_t get_button_state_cb;
+    };
+
+    /** @brief Initialize the LBS Service.
+     *
+     * This function registers application callback functions with the My LBS
+     * Service
+     *
+     * @param[in] callbacks Struct containing pointers to callback functions
+     *			used by the service. This pointer can be NULL
+     *			if no callback functions are defined.
+     *
+     *
+     * @retval 0 If the operation was successful.
+     *           Otherwise, a (negative) error code is returned.
+     */
+    int my_lbs_init(struct my_lbs_callbacks *callbacks);
 
 #ifdef __cplusplus
 }

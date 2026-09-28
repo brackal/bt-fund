@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "693b5ab1e9420df0",
+    "type": "split",
+    "children": [
+      {
+        "id": "39b6072d2d898334",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08b41cb0b7f469de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "l5/l5_e1/notes/02_BLE_Cybersicherheit_Ressourcen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02_BLE_Cybersicherheit_Ressourcen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "30f43de22b9ea851",
+    "type": "split",
+    "children": [
+      {
+        "id": "0da79453922f2e16",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "37a6f466810fc0e4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Dateiexplorer"
+            }
+          },
+          {
+            "id": "2bd808aed3a39496",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Suchen"
+            }
+          },
+          {
+            "id": "c293ce87c58e690e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Lesezeichen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cbf2ec6d8a63d396",
+    "type": "split",
+    "children": [
+      {
+        "id": "24fa1c5bf27171e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4609231c46d66a6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "l2/l2_e1/doc/BLE_Advertising_Zusammenfassung.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rückverweise auf BLE_Advertising_Zusammenfassung"
+            }
+          },
+          {
+            "id": "0240ff75db89ce4a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "l2/l2_e1/doc/BLE_Advertising_Zusammenfassung.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Ausgehende Links von BLE_Advertising_Zusammenfassung öffnen"
+            }
+          },
+          {
+            "id": "7dc82f057c435314",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "918c8adf72087fe9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Alle Eigenschaften"
+            }
+          },
+          {
+            "id": "2790f4e199a60866",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "l2/l2_e1/doc/BLE_Advertising_Zusammenfassung.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Gliederung von BLE_Advertising_Zusammenfassung"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Schnellauswahl öffnen": false,
+      "graph:Graph-Ansicht öffnen": false,
+      "canvas:Neuen Canvas erstellen": false,
+      "daily-notes:Heutige Notiz öffnen": false,
+      "templates:Vorlage einfügen": false,
+      "command-palette:Befehlspalette öffnen": false,
+      "bases:Neue Base erstellen": false
+    }
+  },
+  "active": "08b41cb0b7f469de",
+  "lastOpenFiles": [
+    "l5/l5_e1/notes/01_BLE_Pairing_Bonding_Zusammenfassung.md",
+    "l6/l6_e1/notes/01_l6_e1_ble-paket-analyse.md",
+    "doc/pairing-association-models/pairing-association-models.md",
+    "doc/ble-glossar/BLE_Glossar.md",
+    "l6/l6_e3/build/l6_e3/CMakeFiles/new_menuconfig-5f29641.bat",
+    "l6/l6_e3/build/l6_e3/CMakeFiles/zephyr_final.rsp",
+    "l6/l6_e3/build/l6_e3/CMakeFiles/d/55e9393adb9a9c3addffd724db7dde9230984f166311165405695a6b51f8b246.d",
+    "l6/l6_e3/build/l6_e3/CMakeFiles/zephyr_pre0.rsp",
+    "l6/l6_e3/build/l6_e3/modules/nrf/subsys/nrf_security/src/stSBj3Kn",
+    "l6/l6_e3/build/l6_e3/modules/nrf/subsys/nrf_security/src/sts9g8pP",
+    "l6/l6_e3/build/l6_e3/zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a",
+    "l6/l6_e3/build/l6_e3/modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/sto03jrW",
+    "l6/l6_e3/build/l6_e3/modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.4.0/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_wpa3_sae.c.obj",
+    "l6/l6_e3/build/l6_e3/modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.4.0/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_spake2p.c.obj",
+    "l6/l6_e1/notes/02_BLE_Cybersicherheit_Ressourcen.md",
+    "l6/l6_e1/notes/01_BLE_Pairing_Bonding_Zusammenfassung.md",
+    "l2/l2_e3/notes/01_l2_e3_adv_work_explained.md",
+    "l2/l2_e1/notes/04_ble_controller_wechsel.md",
+    "l2/l2_e2/notes/01_l2_e2_ble_advertising_start_vs_update.md",
+    "l2/l2_e1/notes/03_l2_e1.md",
+    "l2/l2_e1/notes/02_Bluetooth_Address.md",
+    "l2/l2_e1/notes/01_Advertising_Types_and_Process.md",
+    "l5/l5_e1/notes/02_BLE_Cybersicherheit_Ressourcen.md",
+    "l4/l4_e2/notes/02_ble-notify-indicate.md",
+    "l4/l4_e2/notes/01_BLE_CCCD_Notifications_Discovery.md",
+    "l4/l4_e1/notes/03_l4_e1_nordic_lbs_ble_diskussion.md",
+    "l4/l4_e1/notes/02_BLE-uuid-diskussion.md",
+    "l4/l4_e1/notes/01_BLE_GATT_ATT_Grundlagen.md",
+    "l3/l3_e1/notes/02_l3_e1_bt_conn_ref_erklärung.md",
+    "l3/l3_e1/notes/01_l3_e1_c-struct-initialisierung-funktionszeiger.md",
+    "doc/pairing-association-models/bilder/05_vergleich.png",
+    "doc/pairing-association-models/bilder/04_oob.png",
+    "doc/pairing-association-models/bilder/03_passkey_entry.png",
+    "doc/pairing-association-models/bilder/02_numeric_comparison.png",
+    "doc/pairing-association-models/bilder/01_uebersicht.png",
+    "doc/pairing-association-models/pairing-kapitel/kapitel/pairing-association-models - Kopie.md",
+    "doc/pairing-association-models/pairing-association-models - Kopie.md",
+    "doc/pairing-association-models/pairing-kapitel/kapitel/bilder/05_vergleich.png",
+    "doc/pairing-association-models/pairing-kapitel/kapitel/bilder/04_oob.png",
+    "doc/pairing-association-models/pairing-kapitel/kapitel/bilder/03_passkey_entry.png",
+    "doc/pairing-association-models/pairing-kapitel/kapitel/bilder/02_numeric_comparison.png",
+    "doc/pairing-association-models/pairing-kapitel/kapitel/bilder/01_uebersicht.png",
+    "doc/pairing-association-models/pairing-kapitel/kapitel/pairing-association-models.md",
+    "doc/files/pairing-kapitel/kapitel/pairing-association-models.md",
+    "doc/files/pairing-association-models.md"
+  ]
+}

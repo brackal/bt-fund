@@ -1,0 +1,41 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "nrf-connect.applications": [
+            "${workspaceFolder}\\l2\\l2_e1",
+            "${workspaceFolder}\\l2\\l2_e2",
+            "${workspaceFolder}\\l2\\l2_e3",
+            "${workspaceFolder}\\l3\\l3_e1",
+            "${workspaceFolder}\\l3\\l3_e2",
+            "${workspaceFolder}\\l4\\l4_e1",
+            "${workspaceFolder}\\l4\\l4_e2",
+            "${workspaceFolder}\\l4\\l4_e3",
+            "${workspaceFolder}\\l5\\l5_e1",
+            "${workspaceFolder}\\l5\\l5_e2",
+            "${workspaceFolder}\\l6\\l6_e1",
+            "${workspaceFolder}\\l6\\l6_e2",
+            "${workspaceFolder}\\l6\\l6_e3"
+        ],
+        "editor.formatOnSave": true,
+        "[cpp]": {
+            "editor.defaultFormatter": "ms-vscode.cpptools",
+            "editor.formatOnSave": true
+        },
+        "[c]": {
+            "editor.defaultFormatter": "ms-vscode.cpptools",
+            "editor.formatOnSave": true
+        },
+        "editor.detectIndentation": false,
+        "C_Cpp.formatting": "clangFormat",
+        "C_Cpp.clang_format_style": "file"
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-vscode.cpptools"
+        ]
+    }
+}

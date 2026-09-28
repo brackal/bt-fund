@@ -52,11 +52,11 @@ static ssize_t write_led(struct bt_conn *conn, const struct bt_gatt_attr *attr, 
 		return BT_GATT_ERR(BT_ATT_ERR_INVALID_OFFSET);
 	}
 
-	if (lbs_cb.led_cb) {
+	if (lbs_cb.set_led_state_cb) {
 		uint8_t val = *((uint8_t *)buf);
 
 		if (val == 0x00 || val == 0x01) {
-			lbs_cb.led_cb(val ? true : false);
+			lbs_cb.set_led_state_cb(val ? true : false);
 		} else {
 			LOG_DBG("Write led: Incorrect value");
 			return BT_GATT_ERR(BT_ATT_ERR_VALUE_NOT_ALLOWED);
@@ -72,8 +72,8 @@ static ssize_t read_button(struct bt_conn *conn, const struct bt_gatt_attr *attr
 
 	LOG_DBG("Attribute read, handle: %u, conn: %p", attr->handle, (void *)conn);
 
-	if (lbs_cb.button_cb) {
-		button_state = lbs_cb.button_cb();
+	if (lbs_cb.get_button_state_cb) {
+		button_state = lbs_cb.get_button_state_cb();
 		return bt_gatt_attr_read(conn, attr, buf, len, offset, value, sizeof(*value));
 	}
 
@@ -95,8 +95,8 @@ BT_GATT_SERVICE_DEFINE(
 int bt_lbs_init(struct bt_lbs_cb *callbacks)
 {
 	if (callbacks) {
-		lbs_cb.led_cb = callbacks->led_cb;
-		lbs_cb.button_cb = callbacks->button_cb;
+		lbs_cb.set_led_state_cb = callbacks->set_led_state_cb;
+		lbs_cb.get_button_state_cb = callbacks->get_button_state_cb;
 	}
 
 	return 0;

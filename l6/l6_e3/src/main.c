@@ -134,8 +134,8 @@ static bool app_button_cb(void)
 }
 
 static struct bt_lbs_cb lbs_callbacs = {
-	.led_cb = app_led_cb,
-	.button_cb = app_button_cb,
+	.set_led_state_cb = app_led_cb,
+	.get_button_state_cb = app_button_cb,
 };
 
 static void button_changed(uint32_t button_state, uint32_t has_changed)

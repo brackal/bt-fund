@@ -34,17 +34,17 @@ extern "C" {
 #define BT_UUID_LBS_LED BT_UUID_DECLARE_128(BT_UUID_LBS_LED_VAL)
 
 /** @brief Callback type for when an LED state change is received. */
-typedef void (*led_cb_t)(const bool led_state);
+typedef void (*set_led_state_cb_t)(const bool led_state);
 
 /** @brief Callback type for when the button state is pulled. */
-typedef bool (*button_cb_t)(void);
+typedef bool (*get_button_state_cb_t)(void);
 
 /** @brief Callback struct used by the LBS Service. */
 struct bt_lbs_cb {
 	/** LED state change callback. */
-	led_cb_t led_cb;
+	set_led_state_cb_t set_led_state_cb;
 	/** Button read callback. */
-	button_cb_t button_cb;
+	get_button_state_cb_t get_button_state_cb;
 };
 
 /** @brief Initialize the LBS Service.
